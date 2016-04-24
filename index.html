@@ -19,6 +19,7 @@
     <!-- Font images -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Klinic+Slab">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -37,32 +38,31 @@
 <!-- NAVBAR
 ================================================== -->
    <body>
-   <header id="main_header">
-      <div class="wrapper clearfix">
-        <a><font size="15">Graid</font></a> <!-- Temp until logo is finished -->
-        <nav id="main_nav" class="clearfix">
-          <ul>
-            <li><a href="###"><font size="5">Home</a></li>
-            <li><a href="###"><font size="5">About</a></li>
-            <li><a href="###"><font size="5">How it works</a></li>
-            <li><a href="###" class="login"><button class="btn sml blue s_login"><font size="5">Teacher Login</button></font></a></li>
-            <li><a href="###" class="login"><button class="btn sml blue t_login"><font size="5">Student Login</button></font></a></li>
-          </ul>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><font size="5">Graid</font></a>
+        </div>
 
-        </nav>
-        <i class="fa fa-reorder"></i>
-        <nav id="mobile_nav">
-          <ul>
-            <li><a href="###">Home</a></li>
-            <li><a href="###">About</a></li>
-            <li><a href="###" class="soc_help">How it works</a></li>
-            <li><a href="###" class="t_login">Teacher Login</a></li>
-            <li><a href="###" class="s_login">Student Login</a></li>
-            <li><a href="###" class="blue free_account">Make a Free Account</a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#tf-home" class="page-scroll">Home</a></li>
+            <li><a href="#tf-about" class="page-scroll">About</a></li>
+            <li><a href="#tf-services" class="page-scroll">How it works</a></li>
+            <li><a href="#tf-contact" class="page-scroll"><font size="4">Teacher Login</font></a></li>
+            <li><a href="#tf-contact" class="page-scroll"><font size="4">Student Login</font></a></li> <!--put in hover shit and color later -->
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 
     <!-- Carousel
@@ -70,7 +70,7 @@
 
           <div id="carousel" class="owl-carousel owl-theme">
             <div class ="item">
-              <img src="img/1.png" alt="1">
+              <img src="img/05.jpg" alt="1">
                 <div class="container carousel-caption">
                   <h1><font size="64"><strong>Graid</strong></font></h1>
                   <p><font size="24">Introducing a <strong> new</strong> and<strong> better</strong> way to grade</font></p>
@@ -79,7 +79,7 @@
            </div>
 
             <div class ="item">
-              <img src="img/2.png" alt="2">
+              <img src="img/03.jpg" alt="2">
                 <div style="text-align:left" class="container carousel-caption">
                   <h1><font size="64"><strong>For Teachers</strong></font></h1>
                   <p><font size="6">We have made grading completely hassle free by allowing you to just snap and grade on your smartphone</font></p>
@@ -88,7 +88,7 @@
             </div>
 
             <div class ="item">
-              <img src="img/3.png" alt="3">
+              <img src="img/04.jpg" alt="3">
                 <div class="container carousel-caption">
                   <h1><font size="64"><strong>For Your Learning Centers</strong></font></h1>
                   <p><font size="6">If you manage a learning center, or are a tutor, and tired of scoring tests by hand, Graid has you covered. Print out our SAT, SAT Subject Test, and ACT Graidsheets!</font></p>
@@ -97,7 +97,7 @@
            </div>
 
            <div class ="item">
-              <img src="img/4.png" alt="4">
+              <img src="img/02.jpg" alt="4">
                 <div class="container carousel-caption">
                   <h1><font size="64"><strong>Bring Graid to Your School</strong></font></h1>
                   <p><font size="6">Do you want to get rid of your school's current method of grading that are expensive or time consuming? See what Graid can do for you!</font></p>
@@ -113,53 +113,75 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
 
-    <div class="container marketing">
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading"><span class="red-text">Interested?</span></h2> <!-- white -->
-          <p class="lead">There's only three easy steps. </p>
-        </div>
+      <section class="section how_it_works">
+    <div class="wrapper clearfix">
+      <header>
+      <h1 class="center-block font1 top">&middot; How It Works &middot;</h1>
+      </header>
+      <div class="description">
+      <p class="description explain"><font size="4">There's only three easy steps. Graid overhauls the grading process, making it better for the teacher and the student. By using our image recognition technology, Graid allows the teacher to be at ease while giving students their results quickly, with grade visualization to let the teacher know how everyone is doing</font></p>
       </div>
+      
+      <a href="###" class="material">
+      <div class="card">
+        <div class="circle"><i class="fa fa-mobile"></i></div>
+        <div class="circle back"><i class="icon-abc"></i></div>
+      </div>
+      <h4 class="upp description">Download our app</h4>
+      <p class="description">Get our app on iOS or Android<br class="mobile_hide"/>for free!</p>
+      </a>
+      
+      <a href="###" class="material">
+      <div class="card">
+        <div class="circle"><i class="fa fa-desktop icon-share"></i></div>
+        <div class="circle back"><i class="icon-share"></i></div>
+      </div>
+      <h4 class="upp description">Input your tests</h4>
+      <p class="description">Input your questions<br class="mobile_hide"/>into our database.</p>
+      </a>
+      
+      <a href="###" class="material">
+      <div class="card">
+        <div class="circle"><i class="fa fa-camera"></i></div>
+        <div class="circle back"><i class="icon-line-graph"></i></div>
+      </div>
+      <h4 class="upp description">Graid it</h4>
+      <p class="description">Simply snap pictures of tests<br class="mobile_hide"/>and grade in seconds.</p>
+      </a>
+      
+      <a href="###" class="material">
+      <div class="card">
+        <div class="circle"><i class="fa fa-line-chart"></i></div>
+        <div class="circle back"><i class="icon-devices"></i></div>
+      </div>
+      <h4 class="upp">Visualize</h4>
+      <p class="description">View grades with sorting options<br class="mobile_hide"/>graphs, and more.</p>
+      </a>
+      
+    </div>
+    </section>
 
-      <div class="row">
-        <div class="col-lg-4">
-          <i class="fa fa-mobile"></i>
-          <h2>Download our app</h2>
-          <p><a class="btn btn-default" href="#" role="button">Learn more&raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <i class="fa fa-desktop"></i>                                                             <!-- bg image -->
-          <h2>Input your tests</h2>
-          <p><a class="btn btn-default" href="#" role="button">Learn more&raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <i class="fa fa-camera"></i>
-          <h2>Graid it</h2>
-          <p><a class="btn btn-default" href="#" role="button">Learn more&raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+    <div class="container marketing">
 
 
       <!-- START THE FEATURETTES -->
-
+      <div class="arrow-down"></div>
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Our App<span class="red-text"> Free on Android and iOS</span></h2>
-          <p class="lead">Get our free app on Android or iOS, put away those red pens, and begin your journey without hand grading with Graid</p>         <!-- white -->
+          <h2 class="featurette-heading font1">Our App<span class="red-text"> Free on Android and iOS</span></h2>
+          <p class="lead description">Get our free app on Android or iOS, put away those red pens, and begin your journey without hand grading with Graid</p>         <!-- white -->
         </div>
       </div>
 
       <hr class="featurette-divider">
-
+      <section class="color">
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Getting Started<span class="red-text"> with Graid</span></h2>
-          <p class="lead">Login to your Graid account, and input the test questions into our database. Then, simply print out our Graidsheets from any printer, and hand them out to your students. You're all set to give the test!</p>                                  
+          <h2 class="featurette-heading font1">Getting Started<span class="red-text"> with Graid</span></h2>
+          <p class="lead description">Login to your Graid account, and input the test questions into our database. Then, simply print out our Graidsheets from any printer, and hand them out to your students. You're all set to give the test!</p>                                  
         </div>  
       </div>    
 
@@ -167,36 +189,34 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Grading<span class="red-text"> the easy way</span></h2>
-          <p class="lead">Once your students are done taking the test, pull out your smartphone and Graid the tests with your camera. When all the grades are in our database, you'll be able to sort, graph, and observe what's happening behind the grades.</p>
+          <h2 class="featurette-heading font1">Grading<span class="red-text"> the easy way</span></h2>
+          <p class="lead description">Once your students are done taking the test, pull out your smartphone and Graid the tests with your camera. When all the grades are in our database, you'll be able to sort, graph, and observe what's happening behind the grades.</p>
           <br>
         </div>
-      </div>                                                            <!-- white -->
+      </div>                                                       
 
       <hr class="featurette-divider">
-
+</div>
       <!-- /END THE FEATURETTES -->
 
-
-
-
-
       <!-- FOOTER -->
-      <nav id="footer">
-      <footer>
-        <p class ="split para">&middot; &copy; Graid Inc. &middot; <span style ="float:right">&middot; Built with &hearts; from the Graid Team &middot;</span></p>
+    <div class = "footer">
+  <nav id="footer">
+      <footer class = "gray">
+        
         <div class="pull-right fnav">
-                <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <ul class="footer-social split para">
+                    <li><a href="#"><i class="fa fa-facebook bottom"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram bottom"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter bottom"></i></a></li>
                 </ul>
             </div>
+            <p class ="split para">&middot; &copy; Graid Inc. &middot;</p>
       </footer>
 
-    </div><!-- /.container -->
+    <!-- /.container -->
 </nav>
-
+</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
